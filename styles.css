@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 .sidebar {
@@ -9,11 +10,6 @@
     background-color: #03adfc;
     color: white;
     grid-row: 1 / 3;
-}
-
-.content {
-    background-color: red;
-    grid-column: 2;
 }
 
 .header {
@@ -64,4 +60,33 @@ button {
 
 .username {
     grid-column: 2;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    background-color: lightgrey;
+    padding: 50px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    gap: 40px;
+    grid-row: 1 / 3;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.announcements {
+    border: 1px solid black;
+}
+
+.trending {
+    border: 1px solid black;
 }
