@@ -18,12 +18,15 @@
 
 .header {
     background-color: grey;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
     grid-column: 2 / 3;
 }
 .container {
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 200px;
+    grid-template-rows: 150px;
     height: 100vh;
 }
 
@@ -32,3 +35,33 @@
     padding-right: 25px;
 }
 
+.search {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: end;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: 100px 200px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: end;
+    height: min-content;
+}
+
+button {
+    width: 75px;
+}
+
+.username {
+    grid-column: 2;
+}
