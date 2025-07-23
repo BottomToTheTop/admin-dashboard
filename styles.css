@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: Roboto, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .sidebar {
     display: grid;
-    grid-template-columns: 100px 1fr;
-    grid-template-rows: 100px repeat(5, 50px) 100px repeat(3, 50px);
+    grid-template-columns:  100px 1fr;
+    grid-template-rows: 120px repeat(6, 50px) 30px repeat(3, 50px);
     background-color: #03adfc;
     color: white;
     grid-row: 1 / 3;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .header {
@@ -89,4 +94,30 @@ button {
 
 .trending {
     border: 1px solid black;
+}
+
+img {
+    filter: invert(100%);
+    width: auto;
+    height: 25px;
+    align-self: center;
+}
+
+.sidebar div {
+    align-self: center;
+}
+
+.dashboard {
+    font-size: 1.8rem;
+}
+
+.dashboard-icon {
+    height: 50px;
+    width: auto;
+    align-self: center;
+    padding-right: 10px;
+}
+
+.empty {
+    grid-column: 1 / 3;
 }
