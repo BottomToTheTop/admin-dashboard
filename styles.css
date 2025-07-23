@@ -29,11 +29,6 @@
     padding-right: 25px;
 }
 
-.welcome {
-    display: grid;
-    grid-template-columns: 100px 200px;
-}
-
 .buttons {
     display: grid;
     grid-template-columns: 100px 100px 100px;
@@ -154,4 +149,27 @@ img {
 
 .name {
     font-weight: bold;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: 100px 300px;
+    font-weight: bold;
+    padding-left: 35px;
+}
+
+.welcome div {
+    align-content: center;
+}
+.welcome-profile-picture {
+    height: 75px;
+    width: auto;
+}
+
+.hello {
+    font-size: 1.1rem;
+}
+
+.username {
+    font-size: 1.5rem;
 }
